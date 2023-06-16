@@ -19,6 +19,11 @@
     left: 20px;
   }
 
+  .footer{
+    text-align: center;
+    color: white;
+  }
+
   .wrapper {
     position: absolute;
     transform: translate(-50%, -50%);

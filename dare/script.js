@@ -3,13 +3,13 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 30, value: "azka" },
-  { minDegree: 31, maxDegree: 90, value: "dimas" },
-  { minDegree: 91, maxDegree: 150, value: "alif" },
-  { minDegree: 151, maxDegree: 210, value: "zidane" },
-  { minDegree: 211, maxDegree: 270, value: "refi" },
-  { minDegree: 271, maxDegree: 330, value: "cino" },
-  { minDegree: 331, maxDegree: 360, value: "azka"},
+  { minDegree: 0, maxDegree: 30, value: "Joget ajojing di depan temen - temen!" },
+  { minDegree: 31, maxDegree: 90, value: "Ajak fotbar salah satu mentor pake gaya TBL!" },
+  { minDegree: 91, maxDegree: 150, value: "Push up 3 kali!" },
+  { minDegree: 151, maxDegree: 210, value: "Dance cupid di depan temen - temen!" },
+  { minDegree: 211, maxDegree: 270, value: "Nyanyi lagu (bebas)!" },
+  { minDegree: 271, maxDegree: 330, value: "Ajak salah satu teman kamu maju ke depan" },
+  { minDegree: 331, maxDegree: 360, value: "Joget ajojing di depan temen - temen!"},
 ];
 //Size of each piece
 const data = [16, 16, 16, 16, 16, 16];
@@ -30,7 +30,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["dimas", "azka", "cino", "refi", "zidane", "alif"],
+    labels: ["🔒", "🔒", "🔒", "🔒", "🔒", "🔒"],
     //Settings for dataset/pie
     datasets: [
       {
@@ -65,11 +65,11 @@ const valueGenerator = (angleValue) => {
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
       // buat pop up
       Swal.fire({
-        title: 'Selamat Bermain!',
+        title: 'Tantangan',
         text: i.value,
-        confirmButtonText: innerHTML = `<a href="/truth/index.html" style="color: white; text-decoration: none;">Truth</a>`,
-        cancelButtonText: innerHTML = `<a href="/dare/index.html" style="color: white; text-decoration: none;">Dare</a>`,
-        showCancelButton: true,
+        // confirmButtonText: innerHTML = `<a href="/truth/index.html" style="color: white; text-decoration: none;">Truth</a>`,
+        // cancelButtonText: innerHTML = `<a href="/dare/index.html" style="color: white; text-decoration: none;">Dare</a>`,
+        // showCancelButton: true,
         showCloseButton: true
       })
       // finalValue.innerHTML = `<p>Value: ${i.value}</p>`; 
